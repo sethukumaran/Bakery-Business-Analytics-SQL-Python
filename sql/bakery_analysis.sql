@@ -1,5 +1,4 @@
--- PostgreSQL-compatible Bakery Business Analytics
--- Source table: bakery_transactions
+
 
 SELECT COUNT(*) transactions, SUM(total_bill) revenue, SUM(profit) profit,
        ROUND(100.0*SUM(profit)/NULLIF(SUM(total_bill),0),2) margin_pct,
